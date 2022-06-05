@@ -31,6 +31,9 @@ public class BaseClass {
            case "edge":
                WebDriverManager.edgedriver().setup();
                driver= new EdgeDriver();
+           default:
+               WebDriverManager.chromedriver().setup();
+               driver= new ChromeDriver();
        }
     }
 
